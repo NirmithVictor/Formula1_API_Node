@@ -6,7 +6,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restraunt</title>
+    <title>Formula 1</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -17,6 +18,8 @@
   </head>
   <link rel="stylesheet" href="../css/style.css" />
   <body>
+    <div id="preloader">
+    </div>
     <nav class="navbar">
       <div class="navbar-container container">
           <input type="checkbox" name="" id="checkie">
@@ -26,15 +29,15 @@
               <span class="line line3"></span>
           </div>
           <ul class="menu-items" id="menu-items">
-              <li><a href="#" class="nav-item">Home</a></li>
-              <li><a href="#" class="nav-item">About</a></li>
-              <li><a href="#" class="nav-item">Category</a></li>
-              <li><a href="#" class="nav-item">Menu</a></li>
-              <li><a href="#" class="nav-item">Testimonial</a></li>
-              <li><a href="#" class="nav-item">Contact</a></li>
+            <li><a href="./Championship.html" class="nav-item">Championships</a></li>
+            <!--Default to 2022 or current in api call for data display-->
+            <li><a href="./CircuitPages.html" class="nav-item">Circuits</a></li>
+            <li><a href="./Constructors.html" class="nav-item">Constructors</a></li>
+            <li><a href="./LeaderBoards.html" class="nav-item">Drivers</a></li>
+            <li><a href="./contact.html" class="nav-item">Contact</a></li>
           </ul>
           <div style="z-index: 2; padding: 10px;">
-            <h1 class="logo">Jay</h1>
+            <a href="../index.html"><h1 class="logo">Jay</h1></a>
           </div>
       </div>
   </nav>

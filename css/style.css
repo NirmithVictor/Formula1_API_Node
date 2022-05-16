@@ -16,6 +16,22 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*   Loader Animation */
+#preloader{
+    background: #000 url(../images/preloader.gif) no-repeat center center;
+    height: 100%;
+    background-size: 35%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+
 /* ///////////..utility classes../////////// */
 
 .container {
