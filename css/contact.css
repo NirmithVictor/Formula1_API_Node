@@ -1,0 +1,55 @@
+body{
+    background: linear-gradient(rgba(28, 27, 27, 0.388), rgba(60, 57, 57, 0.5)), url(../images/contactBG.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+#main_form{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+#header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 31px;
+    color: white;
+}
+
+.subBut{
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+#tex, #tex2{
+    width: 595px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    padding: 4px;
+}
+#tex2{
+    height: 80px;
+}
+
+@media (max-width: 769px){
+    #header{
+        width: 100%;
+        font-size: 24px;
+    }
+    #tex{
+        width: 200px;
+        height: 37px;
+    }
+    #tex2{
+        width: 200px;
+        height: 80px;
+    }
+}
