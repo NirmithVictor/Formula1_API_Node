@@ -13,6 +13,26 @@ window.addEventListener("load", function () {
     fetch(`https://en.wikipedia.org/w/api.php?origin=*&action=query&titles=Charles%20Leclerc&prop=pageimages&format=json&pithumbsize=100&formatversion=2`).then(res=>res.json()).then((content)=>{
         console.log(content)
     })
+    //This is to get the year ranges and create boxes for the championship pages
+    let b= document.getElementById("subBut")
+    let c= document.getElementById("inputYears")
+    b.addEventListener("click",()=>{
+        //console.log(c.value)
+        const currentYear = (new Date()).getFullYear();
+        const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
+        //console.log(range(currentYear, currentYear - c.value+1, -1));
+        a = range(currentYear, currentYear - c.value+1, -1)
+        console.log(a)
+        for (i=0;i<c.value;i++){
+            console.log(a[i])
+        }
+        fetch(`http://ergast.com/api/f1/driverStandings/1.json?limit=90`).then(res=>res.json()).then((content)=>{
+            //console.log(content.MRData.StandingsTable.StandingsLists[content.MRData.StandingsTable.StandingsLists.length-1])
+            for(i=0;i<c.value;i++){
+                console.log(content.MRData.StandingsTable.StandingsLists[content.MRData.StandingsTable.StandingsLists.length-1-i])
+            }
+        })
+    })
 })
 /*
 

@@ -55,6 +55,9 @@ body{
     height: 40px;
     border-radius: 10px 0;
     width: 300px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
 }
 
 .subBut{
@@ -62,6 +65,10 @@ body{
     padding: 10px;
     border-radius: 10px 0;
     transition: 1s ease-in-out;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
 }
 
 .subBut:hover{
