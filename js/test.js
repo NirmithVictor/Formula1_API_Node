@@ -21,15 +21,20 @@ window.addEventListener("load", function () {
         const currentYear = (new Date()).getFullYear();
         const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
         //console.log(range(currentYear, currentYear - c.value+1, -1));
-        a = range(currentYear, currentYear - c.value+1, -1)
+        a = range(currentYear, currentYear - c.value, -1)
         console.log(a)
         for (i=0;i<c.value;i++){
             console.log(a[i])
         }
         fetch(`http://ergast.com/api/f1/driverStandings/1.json?limit=90`).then(res=>res.json()).then((content)=>{
             //console.log(content.MRData.StandingsTable.StandingsLists[content.MRData.StandingsTable.StandingsLists.length-1])
-            for(i=0;i<c.value;i++){
-                console.log(content.MRData.StandingsTable.StandingsLists[content.MRData.StandingsTable.StandingsLists.length-1-i])
+            if (c.value >1){
+                for(i=0;i<=c.value;i++){
+                    console.log(content.MRData.StandingsTable.StandingsLists[content.MRData.StandingsTable.StandingsLists.length-i-1])
+                }
+            }
+            else{
+                console.log(content.MRData.StandingsTable.StandingsLists[content.MRData.StandingsTable.StandingsLists.length-1])
             }
         })
     })
