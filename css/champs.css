@@ -1,0 +1,70 @@
+body{
+    background: linear-gradient(rgba(28, 27, 27, 0.388), rgba(60, 57, 57, 0.5)), url(../images/champsBG.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#champsContainer{
+    width: 100%;
+    padding: 30px 40px 40px 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow-y: auto;
+    overflow-y: auto;
+    flex-wrap: wrap;
+}
+#box{
+    height: 270px;
+    padding: 20px;
+    transition: 1s ease-in-out;
+    border-radius: 10px;
+    color:white;
+}
+.images{
+    border-radius: 10px;
+}
+#NameAndYear p{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#box:hover{
+    background-color: rgba(169, 163, 163, 0.7);
+    cursor: pointer;
+    color: black;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+#input_box{
+    padding: 100px 40px 0 40px;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+}
+#inputYears{
+    padding: 5px;
+    height: 40px;
+    border-radius: 10px 0;
+    width: 300px;
+}
+
+.subBut{
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px 0;
+    transition: 1s ease-in-out;
+}
+
+.subBut:hover{
+    background-color: orangered;
+    color:white;
+}
