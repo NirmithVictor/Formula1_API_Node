@@ -17,6 +17,7 @@
     />
   </head>
   <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/champs.css" />
   <body>
     <div id="preloader">
     </div>
@@ -41,8 +42,28 @@
           </div>
       </div>
   </nav>
+  </div>
   <!--Intend to show all championships for the last 10 years and who won them all-->
-  <div></div>
-
+  <!--Get data from this API-->
+  <!--http://ergast.com/api/f1/driverstandings/1.json?limit=90-->
+  <div style=" height: 100vh; background-color: rgba(0, 0, 0, 0.55);">
+    <div id="input_box">
+      <input id="inputYears" type="textbox" placeholder="Enter Number of years of champion">
+      <input class="subBut" type="button" value="Send Now" >
+    </div>
+    <div id="champsContainer">
+      <a href="./DriverInfo.html">
+        <div id="box">
+          <div id="img">
+            <img class="images" src="../images/Goat1.png" alt="username logo" width="200px" height="200px">
+          </div>
+          <div id="NameAndYear">
+            <p>Michael Schumacher</p>
+            <p>2004</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
   <script src="../js/test.js"></script>
 </html>
