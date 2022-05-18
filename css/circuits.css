@@ -1,0 +1,23 @@
+body{
+    background: linear-gradient(rgba(28, 27, 27, 0.388), rgba(60, 57, 57, 0.5)), url(../images/circuitbgmain.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.subBut2{
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px 0;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+.subBut2:hover{
+    background-color: orangered;
+    color:white;
+}

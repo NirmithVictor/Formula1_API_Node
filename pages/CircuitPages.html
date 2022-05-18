@@ -17,7 +17,8 @@
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
   </head>
   <link rel="stylesheet" href="../css/style.css" />
-  
+  <link rel="stylesheet" href="../css/champs.css" />
+  <link rel="stylesheet" href="../css/circuits.css" />
   <body>
     <div id="preloader">
     </div>
@@ -44,6 +45,23 @@
   </nav>
   <!--All Circuit images and information for the current year (default)-->
   <!--Add drop down or year to choose and view data for a particular year-->
-  <div></div>
+  <div style=" height: 100vh; background-color: rgba(0, 0, 0, 0.55);">
+    <div id="input_box">
+      <input id="inputYears" type="year" min="0" placeholder="Enter Year">
+      <button class="subBut2" id="subBut2" type="button"> Submit </button>
+    </div>
+    <div id="champsContainer">
+      <a href="./TrackInfo.html">
+        <div id="box">
+          <div id="img">
+            <img class="images" src="../images/redbull.png" alt="username logo" width="200px" height="200px">
+          </div>
+          <div id="NameAndYear">
+            <p>Red Bull Ring</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
   <script src="../js/test.js"></script>
 </html>
