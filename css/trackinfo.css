@@ -1,0 +1,251 @@
+body{
+    background: linear-gradient(rgba(28, 27, 27, 0.388), rgba(60, 57, 57, 0.5)), url(../images/driveInfoBG.png);
+    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#main_container{
+    padding: 15px;
+    height: 700px;
+    padding: 70px 20px 10px 20px;
+    height: 100%;
+    width: 100%;
+}
+
+#main_container .outputs{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+.wrapper .left,
+.wrapper .right {
+      width: 100%;
+      height: 40vh;
+      position: relative;
+      overflow: hidden;
+}
+
+.wrapper .left{
+    background: grey;
+    color: white;
+    border-radius: 10px 0;
+}
+
+.left2,.right2{
+      
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+}
+
+.wrapper .imageContainer {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      left: 0;
+      transition: 0.25s ease all;
+}
+
+.wrapper .caption ,.caption{
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      margin: 10px;
+}
+
+
+.wrapper .caption h1 {
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      margin-bottom:1em;
+}
+
+
+.caption{
+    margin: 1px;
+    margin-top: 20px;
+}
+
+.capt{
+    margin-bottom: 75px;
+}
+
+.wrapper .caption .button {
+    padding: 1em;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.username{
+    font-size: 30px;
+    text-transform: uppercase;
+    word-break: break-all;
+    font-weight: bold;
+}
+
+.usernamemini{
+    font-size: 30px;
+    text-transform: uppercase;
+    word-break: break-all;
+}
+
+.images{
+    border-radius: 20px;
+    width: 400px;
+    height: 100%;
+}
+
+#champHist{
+    background-color: grey;
+    padding: 10px 10%;
+    margin-top: 40px;
+}
+
+.heading{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table thead{
+    background-color: #ee2828;
+}
+.table thead tr th{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: white;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #dee2e685;
+}
+
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #f1f1f1;
+    background-color: #3c3f44;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dee2e685;
+}
+/*
+.table tbody tr td .btn{
+    width: 130px;
+    text-decoration: none;
+    line-height: 35px;
+    display: block;
+    background-color: #ff1046;
+}
+*/
+
+@media screen and (min-width:1200px) {
+    .wrapper {
+          display: flex;
+    }
+    .wrapper .left{
+          width: 50%;
+          height: 300px;
+          overflow-y: auto;
+    }
+    .wrapper .right{
+      width: 40%;
+    }
+    .left2{
+          flex-direction: row;
+    }      
+}
+
+@media screen and (max-width:1200px) and (min-width:720px) {
+    .wrapper .left{
+        height: 300px;
+        overflow-y: auto;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background: none;
+    }
+    .username,.usernamemini{
+        font-size: 20px;
+        text-transform: uppercase;
+        word-break: break-all;
+        font-weight: normal;
+    }
+    #main_container{
+        padding: 70px 0px 0px 0px;
+        height: auto; 
+        width: auto; 
+    }     
+    .wrapper .caption,.caption{
+        background-color: grey;
+        padding: 20px;
+        border-radius: 10px 0;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:720px) {
+  .wrapper .left{
+        height: 200px;
+        overflow-y: auto;
+        margin-top: 15px;
+  }
+  .username,.usernamemini{
+    font-size: 20px;
+    text-transform: uppercase;
+    word-break: break-all;
+    font-weight: normal;
+    }
+    #main_container{
+        padding: 70px 0px 0px 0px;
+    }
+
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom: 15px;
+    }
+    .table tbody tr td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+    }
+}
+
+/*History*/

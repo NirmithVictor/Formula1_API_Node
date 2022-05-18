@@ -1,6 +1,3 @@
-<!--Track information-->
-<!--This page is basically like let us say when a user says 2020 data-->
-<!--ONLY 2020 data for drivers and constructors will pop up here-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,7 +14,7 @@
     />
   </head>
   <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/trackinfo.css" />
+  <link rel="stylesheet" href="../css/driverInfo.css" />
   <body>
     <div id="preloader">
     </div>
@@ -60,34 +57,37 @@
         <div class="side left">
             <div class="caption capt" >
             <!--Make the username capitalized-->
-            <p class="username">red bull ring</p>
-            <p class="usernamemini"><strong>Country: </strong>Austria</p>
-            <p class="usernamemini"><strong>Locality:</strong> Spielberg</p>
-            <p class="usernamemini"><strong>lat: </strong>47.2197</p>
-            <p class="usernamemini"><strong>long: </strong>14.7647</p>
+            <p class="username">red bull</p>
+            <p class="usernamemini"><strong>Nationality: </strong>Austrian</p>
+            <p class="usernamemini"><strong>No of championships:</strong> 7</p>
+            <p class="usernamemini"><strong>Points (2022): </strong>151</p>
+            <p class="usernamemini"><strong>Total Wins: </strong>75</p>
           </div>
         </div>
       </div>
     </div>
+    <!--WE CAN EVEN GET THEIR HISTORY DATA LESSSS GOOOOO-->
     <div id="champHist" class="champHist">
       <div class="table-container">
         <div>
-          <h1 class="heading">2022 Race Details</h1>
+          <h1 class="heading">Career History</h1>
         </div>
         <table class="table">
           <thead>
             <tr>
-              <th>Session</th>
-              <th>Date</th>
-              <th>Time</th>
+              <th>Season</th>
+              <th>Wins</th>
+              <th>Points</th>
+              <th>Position</th>
               <!--<th>Wikipedia Season link</th>-->
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td data-label="Session">First Practice</td>
-              <td data-label="Date">2022-07-08</td>
-              <td data-label="Time">11:30:00Z</td>
+              <td data-label="Season">2005</td>
+              <td data-label="Wins">0</td>
+              <td data-label="Points">34</td>
+              <td data-label="Position">7</td>
             </tr>
             <!--Use this API for this history data http://ergast.com/api/f1/drivers/{{driverid}}/driverStandings-->
           </tbody>
